@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,sans-serif;
+     overflow-x: hidden;
+     width: 100%;
+     
+     
+}
+/* logo start */
+.logo{
+    display: flex;
+    align-items: center; 
+    
+}
+.logo img{
+    width: 40px;
+    margin-right: 10px;
+     
+}
+/* logo end */
+/* header link start */
+.main-header{
+     
+    background-color: rgb(165, 48, 2); 
+    box-shadow: 1px 8px 8px  black;
+    position: sticky;
+    top: 0;
+    z-index: 10px;
+    padding: 15px;
+    opacity: 0.7;
+
+}
+.container{
+     width: 90%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    margin-left: 650px;
+    
+    
+}
+.nav-list li{
+     margin: 0 15px; 
+
+}
+.nav-list a{
+   
+    text-decoration: none;;
+    color:#fff;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 0;
+    position: relative;
+    
+}
+.nav-list a:hover{
+    color:#0066ff;
+}
+.nav-list a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 0;
+    height: 2px;
+    background-color: #0066ff;
+    transform: width 0.3s;
+}
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+/* header link end */
+/* login btn start */
+
+.btn-button{
+    background-color: rgb(1, 173, 59);
+    border: none;
+    color:#fff;
+    padding: 8px 28px;
+    text-align: right;
+    text-decoration: none;
+    display: flex;
+    font-size: 26px;
+    border-radius: 10px 20px;
+    margin-left: 20px;
+    
+}
+.btn-button:hover{
+    background-color: #013d27;
+}
+/* login btn end */
+
+/* main sections start */
+
+.main-content{
+    background-image: url(code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top:0;
+
+
+}
+.hero-content{
+    flex: 1;
+
+}
+.hero-content h5{
+     font-family: "Merriweather", serif;
+     color: rgb(202, 201, 196);
+     margin-top: 30px ;
+     margin-left: 120px;
+     font-size: 23px;
+     font-style: italic;
+}
+
+.hero-content h1{
+      font-family: "Merriweather", serif;
+       color: rgb(196, 160, 1);
+      font-weight: bold;
+      font-size: 8.50rem;
+      margin-left: 80px;
+      font-weight: bold;
+      font-style: oblique;
+
+     
+      
+}
+
+/* main sections end */
+
+/* secstion start  */
+.card-container{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+
+}
+.card-container {
+    text-decoration: none;
+    background-color: #fff;
+    gap: 4rem;
+}
+.card-container img{
+    
+    margin: 0;
+    width: 335px;
+    height: 150px;
+   
+    
+    
+    
+}
+.card-container a img {
+            height: 100px;
+            width: 150px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            
+}
+/* secstion end  */
+/* main articecle */
+.article{
+     display: flex;
+     justify-content: left;
+     align-items: center;
+      margin: 0 100px 0 100px; 
+     box-shadow: 10px 10px 15px 15px rgb(114, 113, 113);
+    
+
+
+}
+.box1{
+     width: 50%;
+     height: 600px;
+     background-color: #ecf0bc;
+    
+  
+
+     
+}
+.box2{
+    width: 50%;
+    height: 600px;
+    background-image: url(ai\ code\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  
+
+    
+}
+.article .box1 h4{
+        font-family:serif;
+        font-weight: 600;
+        font-size: 16px;
+        color:#333;
+        margin: 80px 0 0 45px;
+        
+        
+}  
+
+.article .box1 h1{
+           font-family: monospace;
+           font-size: 55px;
+           font-weight: bold;
+           margin: 10px 0 0 45px;
+           color:#333;
+
+}
+span{
+           color:#995700;
+           font-weight: bold;
+}
+.article .box1 p{
+    color:#333;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT',
+     'Trebuchet MS', sans-serif;
+     margin: 10px 5px 0 45px;
+}
+
+.full-content{
+    color:#333;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT',
+     'Trebuchet MS', sans-serif;
+     margin: 10px 5px 0 45px;
+     display: none;
+}
+.see-more-btn{
+     background: #eef78c; 
+    color: black;
+    border:none;
+    border-radius: 20px;
+    padding: 4px 8px;
+    cursor: pointer;
+    margin-left: 45px;
+}
+.article .header-actions{
+     margin: 40px;
+
+    
+    
+}
+.article ul{
+    display: flex;
+    align-items: center;
+    margin: 50px 0 0 80px;
+    
+}
+.icon{
+    gap: 45px;
+    font-size: 25px;
+    
+}
+i{
+    color: #016446;
+}
+i:hover{
+    color:#20a000;
+}
